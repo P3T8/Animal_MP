@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Új állat</title>
+    <link rel="stylesheet" href="animal.css">
+    <meta name="description" content="Uj allat">
+    <meta name="keywords" content="uj, allat">
+    <script src="insert.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Új állat</h1>
+        </header>
+        <form action="http://localhost:3000/animal" method="post" enctype="multipart/form-data">
+            <p class="beviteli">
+                <input type="text" name="megnevezes" id="megnevezes" min="5" placeholder="Megnevezés" value="?" required>
+            </p>
+            <p class="beviteli">
+                <input type="text" name="fajtaja" id="fajtaja" placeholder="fajtája" value="575" required>
+            </p>
+            <p class="beviteli">
+                <input type="text" id="ertek" readonly style="text-align: center;">
+            </p>
+            <p class="beviteli">
+                <button type="button"  id="createButton">Új állat</button>
+            </p>
+        </form>
+
+        <a href="index.html">Vissza</a>
+    </div>
+</body>
+
+</html>
